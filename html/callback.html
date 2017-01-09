@@ -1,0 +1,36 @@
+<html>
+
+    <head>
+
+        <style>
+
+        .square{
+            position : absolute;
+            top : 50%;
+            left  :50%;
+            transform : translate(-50% , -50%);
+            width : 200px;
+            height : 200px;
+            background-color : cadetblue;
+
+        }
+        </style>
+    </head>
+    <body>
+
+    <div class="square"></div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous">
+    </script>
+    <script src="../js/bin/callback.bundle.js"></script>
+    <script>
+        $(function(){
+            $('.square').fadeOut(2000);
+        });
+    </script>
+
+    </body>
+</html>
