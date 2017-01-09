@@ -13,4 +13,6 @@ Four javascript files are generated with to `/js/bin/` with some examples on how
 works. Also, four html pages are provided within `/html/` that demonstrate how blocking javascript code interacts with
 animations and how the async/await 'blocking' code doesn't.
 
+##Spanish
+A spanish version is available in the branch **esp**, with explanatory comments translated to spanish.
 
