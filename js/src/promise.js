@@ -2,7 +2,8 @@ var fruits = require('./service/promise');
 
 var a , b, c = null;
 
-//simple promise train: get rid of callback hell but still pretty ugly.
+//Un simple tren de promesas: nos libramos del 'callback hell' pero es un poco feo
+//y puede ser difícil de cambiar.
 fruits.get()
 .then( function(res){
     a = res;

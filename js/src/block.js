@@ -1,7 +1,8 @@
 
 var fruit = require('./service/block');
 
-//Here the fruit.get() from block.js blocks the fade animation of the square.
+//Aquí, la llamada a fruit.get() desde block.js bloquea la animación de
+//fadeOut del cuadrado.
 console.log(fruit.get());
 console.log(fruit.get());
 console.log(fruit.get());

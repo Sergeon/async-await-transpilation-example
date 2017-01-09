@@ -1,8 +1,6 @@
 var Promise = require('bluebird');
 var fruits = require('./callback');
 
-
-
 module.exports = {
 
     get : function(){

@@ -3,8 +3,12 @@ var fruits = require('./service/promise');
 var error = require('./service/throw');
 var reject = require('./service/reject.js');
 
-//any await call will work as blocking, if inside an async function.
-//However, this 'blocking' code doesn't block the javascript animation.
+/*Cualquier llamada precedida por 'await' dentro de una función declarada con 'async'
+se comporta como código bloqueante:
+la segunda llamada sólo empezará cuando la primera promesa se haye satisfecha.
+Sin embargo, este código 'bloqueante' no es verdaderamente tal, y no bloqueará
+animaciones en curso o interacciones del usuario.
+*/
 async function getFruits(){
     var a = await fruits.get();
     var b = await fruits.get();
@@ -15,15 +19,15 @@ async function getFruits(){
 ( async function(){
     await getFruits();
 
-    //any error inside a function declared with the keyword 'async' will be 'casted'
-    //to a rejected promise instead.
+    /*Cualquier error dentro de una función declarada con 'async' se transforma
+    automáticamente en una promesa rechazada*/
     error().catch(console.log);
 
     try{
         await reject();
     }catch(error){
         console.log('an error was catched:');
-        //Viceversa, any rejected Promise after await is 'casted' to an Error
+        //Viceversa, cualquier promesa rechazada después de 'await' se transforma en un Error
         console.log(error);
     }
 })();
