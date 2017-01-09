@@ -9,7 +9,7 @@ Entonces:
 `npm run blundle`
 
 
-##contents
+##contenidos
 Cuatro javascripts se generarán a `js/bin/` desde `js/src/`: contienen ejemplos sobre el funcionamiento de los callbacks,
 las promesas y async/await. Además, hay cuatro páginas html en `/html/` que demuestran como diferentes formas de consumir
 funciones síncronas o asíncronas interactúan con las animaciones de javascript: aunque el código precedido por `await` se
