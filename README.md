@@ -1,19 +1,18 @@
 # async-await-transpilation-example
-A brief code example showing how to configure webpack and babel to transpile async/await code to ES5, plus some examples.
+Un pequeño ejemplo de cómo transpilar async/await a ES5 usando webpack y babel, con algunos ejemplos de cómo funciona async/await.
 
 ##setup
 `yarn`
 
-then
-
+Entonces:
 
 `npm run blundle`
 
 
-
 ##contents
-Four javascript files are generated with to `/js/bin/` with some examples on how callbacks, promises and async/await code
-works. Also, four html pages are provided within `/html/` that demonstrate how blocking javascript code interacts with
-animations and how the async/await 'blocking' code doesn't.
+Cuatro javascripts se generarán a `js/bin/` desde `js/src/`: contienen ejemplos sobre el funcionamiento de los callbacks,
+las promesas y async/await. Además, hay cuatro páginas html en `/html/` que demuestran como diferentes formas de consumir
+funciones síncronas o asíncronas interactúan con las animaciones de javascript: aunque el código precedido por `await` se
+comporte como si fuera código bloqueante, se puede ver cómo no bloque las animaciones.
 
 
