@@ -6,7 +6,7 @@ A brief code example showing how to configure webpack and babel to transpile asy
 
 then:
 
-`npm run blundle`
+`npm run bundle`
 
 ##contents
 Four javascript files are generated with to `/js/bin/` with some examples on how callbacks, promises and async/await code
