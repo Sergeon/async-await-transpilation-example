@@ -6,7 +6,7 @@ Un pequeño ejemplo de cómo transpilar async/await a ES5 usando webpack y babel
 
 Entonces:
 
-`npm run blundle`
+`npm run bundle`
 
 
 ##contenidos
